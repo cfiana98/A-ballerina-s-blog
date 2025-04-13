@@ -1,0 +1,68 @@
+/** header y nav **/
+header {background-color: rgb(199, 219, 156);}
+h1 {color: rgb(255, 240, 189);
+font-style: italic;
+text-align: left;
+padding: 5px;} 
+
+nav {color: rgb(255, 240, 189);
+font-family: 'Pt serif';
+font-size: '20px';
+font-style: italic;
+text-align: right;}
+.logo {width: 66px; height: 74px;}
+.flex-contenedor {display: flex; flex-direction: row; list-style: none;
+justify-content: flex-end;}
+
+li {margin: 0 15px;}
+a {text-decoration: none;
+color: rgb(255, 240, 189);
+display: block;}
+
+/** section y articles **/
+h2 {color:  rgb(255, 240, 189);
+font-family: 'Pt Serif';
+font-style: italic;}
+section {background-color: rgb(253, 171, 158);}
+p {color: rgb(229, 0, 70)}
+p {margin-left: 10px; font-family: 'Pt serif';}
+.imagen1, .imagen2 {width: 483px; height: 322px;}
+.contenido {display: flex;
+    justify-content: space-evenly;}
+.redes {color: rgb(229, 0, 70)}
+.card {display: block; margin-top: 10vh; margin-left: 8vh;}
+
+/** footer**/
+
+footer {background-color:  rgb(199, 219, 156);}
+.info-pie {text-align: center;
+color: rgb(255, 240, 189);
+font-family: 'Pt serif';
+font-style: italic; list-style: none;
+padding: 5px;}
+
+/*page quien-soy*/
+.muestra1 {margin-left: 50px; margin-top: 20px; 
+width: 20%;}
+
+/* formulario */
+.formulario {margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid ;
+    border-radius: 1em;
+font-family: 'Pt serif';
+font-style: italic; color: rgb(229, 0, 70)}
+h3 {color: rgb(255, 240, 189);
+font-family: 'Pt serif';}
+
+/* Galería */
+.carousel-inner
+.carousel-item {width: 50%;}
+
+
+/* Responsive, media queries*/
+@media (max-width: 768px) {    body {        font-size: 14px;        flex-direction: column;  }    
+.container {        width: 100%;       padding: 10px;     }
+
+}
