@@ -1,0 +1,15 @@
+
+.formulario {
+    margin: 0 auto;
+    width: $form-width;
+  
+    padding: 1em;
+    border: $border-form;
+    border-radius: $form-border-radio;
+    font-family: $ptserif;
+    font-style: $italicfont;
+    color: $magenta; }
+  
+    @include for-mobile-only {
+      width: 90%;
+      margin: 0 auto;}
