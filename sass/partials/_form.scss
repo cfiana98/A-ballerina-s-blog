@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .formulario {
     margin: 0 auto;
@@ -12,4 +13,20 @@
   
     @include for-mobile-only {
       width: 90%;
+=======
+
+.formulario {
+    margin: 0 auto;
+    width: $form-width;
+  
+    padding: 1em;
+    border: $border-form;
+    border-radius: $form-border-radio;
+    font-family: $ptserif;
+    font-style: $italicfont;
+    color: $magenta; }
+  
+    @include for-mobile-only {
+      width: 90%;
+>>>>>>> ca9d88bba0c083f54541621644be62361ffaf729
       margin: 0 auto;}

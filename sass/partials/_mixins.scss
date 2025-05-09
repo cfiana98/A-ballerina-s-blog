@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./componentes";
 
 @mixin tamaño-imagenes ($anchoimg, $altoimg) {
@@ -11,3 +12,18 @@
 }
 
 
+=======
+@import "./componentes";
+
+@mixin tamaño-imagenes ($anchoimg, $altoimg) {
+    alto: $altoimg;
+    ancho: $anchoimg;
+}
+@mixin fonts($ptserif, $italicfont, $fontsize, $amarilloclaro, $magenta) {
+    color: $amarilloclaro $magenta;
+    font-family: $ptserif;
+    font-style: $italicfont;
+}
+
+
+>>>>>>> ca9d88bba0c083f54541621644be62361ffaf729
