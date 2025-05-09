@@ -1,0 +1,94 @@
+sass --watch sass/estilos.scss css/styles.css
+
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/componentes";
+
+header {background-color: $verde;}
+h1 {color: $amarilloclaro;
+font-style: italic;
+text-align: left;
+padding: 5px;} 
+
+nav {
+    color: $amarilloclaro;
+    font-family: $ptserif;
+    font-size: 20px;
+    font-style: $italicfont;
+    text-align: right;  }
+  
+    .flex-contenedor {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: flex-end;
+    }
+  
+
+  li {
+    margin: 0 15px; }
+
+    a {
+      text-decoration: none;
+      color: $amarilloclaro;
+      display: block;
+    }
+
+    h2 {
+        @include base-text-style($amarilloclaro, $ptserif, $italicfont);
+        text-align: left;
+    }
+    section {background-color: $rosaclaro}
+p {color:$magenta}
+p {margin-left: 10px; 
+    font-family: $ptserif;}
+
+    .imagen1, .imagen2 {@include tamaño ($anchoimg, $altoimg);
+        padding-top: 10px;
+    display: flex; flex-direction: row;}
+
+    .contenido {display: flex;
+        justify-content: space-evenly;}
+        .redes {color: $magenta}
+        .card {display: block; 
+            margin: $cardmargint $cardmarginl; }
+
+            footer {background-color:  $verde;}
+.info-pie {text-align: center;
+color: $amarilloclaro;
+@include fonts;
+list-style: none;
+padding: 5px}
+
+.quien-soy {display: flex; 
+    grid-template-rows: auto 1fr; 
+    row-gap: 5vh;
+    padding-top: 5px;}
+.muestra1 {margin-left: 5vh;  
+    width: 40%;}
+.bois {width: 75%;}
+
+.formulario {
+    margin: 0 auto;
+    width: $form-width;
+    padding: 1em;
+    border: $border-form;
+    border-radius: $form-border-radio;
+    font-family: $ptserif;
+    font-style: $italicfont;
+    color: $magenta;
+  }
+
+  .carousel-inner {display: flex; 
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .contenido {flex-direction: column;}
+    .imagen1, .imagen2 {width: 100%; padding-left: 5vh; padding-right: 5vh;}
+    
+    .quien-soy {flex-direction: column; align-items: flex-start;}
+    .muestra1 {width: 75%}
+    .bois {width: 100%; margin-bottom: 15px; padding-right: 5px;}
+     }
