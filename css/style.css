@@ -38,9 +38,9 @@ display: flex; flex-direction: row;}
 .redes {color: rgb(229, 0, 70)}
 .card {display: block; 
     margin-top: 10vh; 
-    margin-left: 8vh;}
+    margin-left: 15vh;}
 
-/** footer**/
+/** footer **/
 
 footer {background-color:  rgb(199, 219, 156);}
 .info-pie {text-align: center;
@@ -50,14 +50,16 @@ font-style: italic;
 list-style: none;
 padding: 5px;}
 
-/*page quien-soy*/
+/* page quien-soy */
 .quien-soy {display: flex; 
     grid-template-rows: auto 1fr; 
     row-gap: 5vh;
     padding-top: 5px;}
 .muestra1 {margin-left: 5vh;  
-    width: 40%;}
-.bois {width: 75%;}
+    width: 483px; 
+    height: 322px;}
+.bois {width: 483px; 
+    height: 322px;}
     
 
 /* formulario */
@@ -71,14 +73,19 @@ padding: 5px;}
     color: rgb(229, 0, 70)}
 h3 {color: rgb(255, 240, 189);
     font-family: 'Pt serif';}
+    .donq {width: 50%;}
 
 /* Galería */
-.carousel-inner {display: flex; 
+.carousel {display: flex; 
     justify-content: center;
+    margin: 15vh;
+    width: 350px;
+    height: 600px;
 }
-/* No puedo resolver cómo hacer que el carrusel no ocupe todo el ancho de pantalla*/
+.texto-galeria {margin-left: 15vh;}
 
-/* Responsive mobile*/
+
+/* Responsive mobile */
 @media (max-width: 480px) {
 .contenido {flex-direction: column;}
 .imagen1, .imagen2 {width: 100%; padding-left: 5vh; padding-right: 5vh;}
@@ -87,3 +94,4 @@ h3 {color: rgb(255, 240, 189);
 .muestra1 {width: 75%}
 .bois {width: 100%; margin-bottom: 15px; padding-right: 5px;}
  }
+

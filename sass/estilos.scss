@@ -66,8 +66,8 @@ padding: 5px}
     row-gap: 5vh;
     padding-top: 5px;}
 .muestra1 {margin-left: 5vh;  
-    width: 40%;}
-.bois {width: 75%;}
+    @include tamaño ($anchoimg, $altoimg);}
+.bois {@include tamaño ($anchoimg, $altoimg);}
 
 .formulario {
     margin: 0 auto;
@@ -79,10 +79,15 @@ padding: 5px}
     font-style: $italicfont;
     color: $magenta;
   }
+  .donq {width: 50%;}
 
   .carousel-inner {display: flex; 
-    justify-content: center;
+    justify-content: center;    
+    margin: 15vh;
+    width: 350px;
+    height: 600px;
 }
+.texto-galeria {margin-left: 15vh;}
 
 @media (max-width: 480px) {
     .contenido {flex-direction: column;}
